@@ -1,0 +1,22 @@
+﻿<Window x:Class="AppPublisher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppPublisher"
+        mc:Ignorable="d"
+        Title="App Publisher" Height="520" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="App Publisher" FontSize="48" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Upload a new version of the Mercash app" FontSize="18" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_version" HorizontalAlignment="Left" Margin="350,170,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="txt_location" HorizontalAlignment="Left" Margin="350,220,0,0" Text="/wizard/files/downloadble/" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <DatePicker x:Name="dp_releasedate" HorizontalAlignment="Left" Margin="350,267,0,0" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="txt_desc" HorizontalAlignment="Left" Margin="350,320,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="59"/>
+        <Label Content="Version Number" HorizontalAlignment="Right" Margin="0,165,450,0" VerticalAlignment="Top"/>
+        <Label Content="Files Location" HorizontalAlignment="Right" Margin="0,215,450,0" VerticalAlignment="Top"/>
+        <Label Content="Released At" HorizontalAlignment="Right" Margin="0,265,450,0" VerticalAlignment="Top"/>
+        <Label Content="Description" HorizontalAlignment="Right" Margin="0,315,450,0" VerticalAlignment="Top"/>
+        <Button Click="Button_Click" Content="Publish" Cursor="Hand" HorizontalAlignment="Left" Margin="350,400,0,0" VerticalAlignment="Top" Height="40" Width="90" Background="White"/>
+    </Grid>
+</Window>
